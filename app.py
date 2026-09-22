@@ -9,7 +9,7 @@ st.title("💼 Jarvis - Autonomous Job Scout")
 api_key = os.getenv("GEMINI_API_KEY")
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-1.5-pro')
 
 if st.button("Run Real Job Search"):
     if not api_key:
